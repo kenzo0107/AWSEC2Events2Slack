@@ -1,0 +1,3 @@
+requests==2.18.1
+retrying==1.3.3
+slackpy==2.2.2
