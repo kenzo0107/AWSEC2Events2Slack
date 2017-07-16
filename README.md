@@ -10,7 +10,7 @@ $ aws configure --profile <profile>
 ## File Structure
 
 ```
-aws-lambda
+.
 ├── README.md
 ├── event.json
 ├── lambda.json
