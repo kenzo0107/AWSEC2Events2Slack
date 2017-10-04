@@ -2,6 +2,7 @@
     "name": "AWSEvent2Slack",
     "description": "Notificate AWS events to Slack",
     "region": "ap-northeast-1",
+    "runtime": "python3.6",
     "handler": "lambda_function.lambda_handler",
     "role": "arn:aws:iam::xxxxxxxxxxxx:role/lambda-check-events-to-slack",
     "timeout": 60,
