@@ -26,7 +26,27 @@ Main lambda function is `lambda_function.py` with Python 3.6.
 "role": "arn:aws:iam::xxxxxxxxxxxx:role/lambda-check-events-to-slack",
 ```
 
-- this `role` is attached a policy for describing ec2 resource.
+* this `role` is attached a policy as follows:
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents",
+                "ec2:Describe*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```
+
+* and trusted entity : `lambda.amazonaws.com`
 
 ## Upload to AWS Lambda
 
